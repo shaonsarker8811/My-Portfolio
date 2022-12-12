@@ -1,0 +1,911 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+ .mean_contain{
+     position: absolute;
+     top: 10px;
+     right: 0;
+ }
+
+.top-ber{
+    max-width: 100vw;
+    background-color: #ba2e1f;
+    height: 40px;
+    margin: 0 auto;
+}
+.toprr-option{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.top_1{
+    text-align: left;
+    display: inline-block;
+   width: 400px;
+   margin-left: 20px;
+}
+.top_1 a{
+    display: inline-block;
+    position: relative;
+    color: #ddd;
+    text-decoration: none;
+    padding: 0 8px 0 2px;
+    transition: all .5s;
+    font-family: 'Baloo Da 2', cursive;
+
+}
+.top_1 a:hover{
+    color: #333333;
+}
+.top_1 a span{
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    right: 1px;
+    top: 6px;
+    background-color: #ddd;
+}
+
+.top_2{
+    position: relative;
+    margin-right: 20px;
+}
+.top_2 input{
+    padding: 4px 15px 4px 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+}
+#btn_search{
+    border-radius: 50%;
+    padding: 2px 4px;
+    position: absolute;
+    right: 2px;
+    border: none;
+    background-color: #ba2e1f;
+    top: 2px;
+    cursor: pointer;
+}
+.top_2 button i{
+    cursor: pointer;
+    color: #ddd;
+}
+
+@media only screen and (max-width:870px) {
+    
+    .top-ber{
+        height: 60px;
+
+
+    }
+
+    .toprr-option{
+        justify-content: center;
+    }
+    .top_1{
+        margin: 2px 0;
+        text-align: center;
+    }
+    .top_1 a{
+        font-size: 13px;
+    }
+    .top_2{
+        margin: 0 0 4px 0;
+    }
+    .top_1 a{
+        font-size: 15px;
+
+    }
+    .top_1 a span{
+        width: 1px;
+        height: 10px;
+    }
+
+}
+
+
+.head_section{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+}
+ .logo{
+     margin-left: 20px;
+ }
+.link a{ 
+    background-color: #333333;
+    border-radius: 50%;
+    padding: 8px 9px;
+    margin: 0 0 0 20px;
+    color: #fff;
+    transition: .6s;
+    text-align: center;
+    margin-right: 20px;
+}
+.link a:nth-child(1):hover{
+    background-color:  #0e76a8;
+}
+.link a:nth-child(2):hover{
+    background-color: #00acee;
+}
+.link a:nth-child(3):hover{
+    background-color: #c8232c ;
+}
+.link a:nth-child(4):hover{
+    background-color: #ee802f;
+}
+/*  */
+
+@media only screen and (max-width:610px){
+    .head_section{
+        height: 70px;
+    
+    }
+    .logo{
+        margin-left: 5px;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .link a{
+        padding: 5px 6px;
+        margin: 0 8px 0 8px;
+        font-size: 14px;
+    }
+
+}
+
+/* this is nav options */
+
+
+nav{
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #333333;
+}
+.navber ul{
+    z-index: 100000;
+}
+.navber{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #333333;
+}
+
+.navber ul li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding: 8px 0;
+    text-align: center;
+    margin: 0 10px;
+    
+}
+
+.navber ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ddd;
+    font-family: 'Baloo Da 2', cursive;
+}
+    .navber ul ul li:hover{
+        background-color: #ba2e1f;
+    
+    }
+    .navber ul li:hover a{
+        color: #ba2e1f;
+    
+    }
+    .navber ul li:hover ul li a{
+        color:#ddd;
+    
+    }
+
+
+.navber ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    top: 30px;
+}
+.navber ul ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}
+.navber ul ul{
+    background-color: #333333;
+    width: 120px;
+    left: -18px;
+    top: 50px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+
+}
+.navber ul ul li{
+    margin: 0;
+    display: block;
+}
+
+
+.navber ul ul ul { 
+    background-color: #333333;
+    visibility: hidden;
+    opacity: 0;
+    width: 120px;
+    left: 120px;
+    position: absolute;
+    top: 20;
+    transition: top .5s;
+}
+.menu{
+    position: relative;
+    display: none;
+}
+.menu i{
+    top: 15px;
+    right: 20px;
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+}
+#close{
+    display: none;
+}
+.drop-1{
+    display: none;
+}
+
+@media screen and (max-width:870px) {
+
+    
+    .menu{
+        display: block;
+        width: 100vw;
+        height: 55px;
+        background-color: #333333;
+    }
+    #navlist{
+        z-index: 100000;
+        display: none;
+    }
+    .navber ul {
+        background-color: #333333;
+        position: absolute;
+        width: 100vw;
+
+
+    }
+    .navber ul ul{
+        background-color: #333333;
+        visibility: visible;
+        opacity: 1;
+        transition: none;
+        position: relative;
+        left: 0;
+        top: 11px;
+        width: 100vw;
+    }
+
+    .navber ul li {
+        width: 100%;
+        border-top: .5px solid #000000;
+        border-right: .5px solid #000000;
+        padding: 10px 0;
+        margin: 0 ;
+        display: block;
+        text-align: left;
+        
+    }
+    
+    .navber ul li a{
+
+        margin-left: 30px;
+    }
+    .navber ul ul li a{
+        margin-left: 50px;
+    }
+    .navber ul ul ul li a{
+        margin-left: 70px;
+    }
+    
+    .navber ul ul  ul ul li a{
+        margin-left: 90px;
+    }
+    
+    .navber ul ul  ul ul ul li a{
+        margin-left: 110px;
+    }
+    
+    .navber ul ul ul { 
+        width: 100vw;
+        visibility: visible;
+        opacity: 1;
+        transition: none;
+        position: relative;
+        left: 0;
+        top: 10px;
+        background-color: #333333;
+    }
+    .navber ul li:hover > ul{
+        top: 11px;
+    }
+    .navber ul ul li:hover > ul{
+        top: 10px;
+
+
+
+    }
+    .drop-1{
+        position: absolute;
+        width: 50px;
+        height: 47px;
+        right: 0;
+        top: 0;
+        background-color: #11769b;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 3px 2px rgb(31, 30, 30);
+    }
+    .drop-1 i{
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+    }
+    .m{
+        display: none;
+    }
+
+        #drop1,#drop2,#drop3,#drop4{
+            display: none;
+        }
+
+}
+
+
+/* this is slider */
+.slideshow-container {
+    max-width: 1140px;
+    position: relative;
+    margin: 20px auto;
+    z-index: 1;
+  }
+  .mySlides{
+      margin: 0 20px;
+      max-width: 1100px;
+      z-index: 1;
+  }
+  .mySlides img{
+    z-index: 1;
+      width: 100%;
+  }
+
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgb(0, 0, 0);
+}
+@media only screen and (max-width:600px){
+    .prev, .next {
+        padding: 6px;
+
+    }
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* this is hero area start */
+
+
+.hero_area{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+.fist_hero_area{
+    text-align: center;
+    margin: 0 20px;
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+.fist_hero_area img{
+    width: 100%;
+    height: 100%;
+}
+.fist_hero_area span{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0531205b;
+}
+.second_hero_area{
+    padding-top: 150px;
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+@media only screen and (max-width:1050px){
+    .second_hero_area{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+
+    }
+    
+}
+@media only screen and (max-width:630px) and (min-width:30px){
+    .fist_hero_area{
+        width: 300px;
+        height: auto;
+    }
+    .second_hero_area{
+        width: 300px;
+    }
+    .second_hero_area p{
+        text-align: left;
+    }
+    #last_text{
+        font-size: 14px;
+        letter-spacing: 0;
+    }   
+    .second_hero_area h1{
+        font-size: 33px;
+        line-height: 40px;
+
+    } 
+}
+
+.second_hero_area h1{
+
+    font-family: 'Baloo Da 2', cursive;
+    color: #093f1b;
+    line-height: 60px;
+
+}
+@media only screen and (max-width:10050px) and (min-width:630px){
+    .second_hero_area h1{
+        font-size: 50px;
+
+    }
+    
+}
+.second_hero_area h1 span{
+    color: #592b0a;
+
+}
+.second_hero_area a{
+    float: right;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgb(36, 7, 13);
+    font-family: 'Baloo Da 2', cursive;
+    border: 1px solid rgb(51, 7, 16);
+    margin: 4px 10px 0 0;
+    transition: all .5s;
+}
+.second_hero_area a:hover{
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+}
+.second_hero_area a i{
+    padding: 0 0 0 5px;
+}
+.second_hero_area p{
+    color: rgb(12, 36, 82);
+    font-size: 15px;
+    font-family: 'Baloo Da 2', cursive;
+
+}
+.main_body{
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgb(238, 233, 233);
+    align-items: center;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.about{
+    text-align: center;
+    width: 320px;
+    height: 600px;
+    margin: 0 20px;
+}
+.about img{
+    width: 100%;
+}
+.about h1{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 35px;
+    border-bottom: 2px solid rgb(4, 26, 15);
+    margin: 20px 0 10px 0;
+    color: rgb(102, 9, 9);
+}
+.about p{
+    margin: 10px 0;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 15px;
+    text-align: left;
+    color: rgb(70, 35, 17);
+}
+.about a{
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 15px;
+    text-decoration: none;
+    color: teal;
+    border: 1px solid rgb(51, 7, 16);
+    padding: 3px 10px;
+    transition: all .5s;
+}
+.about a:hover{
+
+    color: rgb(11, 242, 242);
+    background-color: rgb(36, 36, 36);
+    border: 1px solid rgb(0, 255, 179);
+
+}
+
+.services{
+    text-align: center;
+    width: 320px;
+    height: 600px;
+    margin: 0 20px;
+}
+.services h1{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 35px;
+    border-bottom: 2px solid rgb(4, 72, 6);
+    margin: 20px 0 10px 0;
+    color: rgb(8, 54, 97);
+}
+.services div{
+    margin: 11px 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.services div div{
+    text-align: left;
+    display: block;
+    margin: 0 10px;
+}
+
+.services div div p{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 14px;
+    line-height: 20px;
+    color: #368806;
+}
+.services div div h3{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 18px;
+    line-height: 20px;
+    color: #46110b;
+}
+.services div i{
+    font-size: 80px;
+}
+
+#services_1{
+    color: rgb(7, 21, 84);
+}
+#services_2{
+    color: rgb(87, 11, 26);
+}
+#services_3{
+    color: rgb(35, 7, 63);
+}
+#services_4{
+    color: rgb(7, 63, 57);
+}
+
+.services a{
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 15px;
+    text-decoration: none;
+    color: teal;
+    border: 1px solid rgb(51, 7, 16);
+    padding: 3px 10px;
+    transition: all .5s;
+    text-align: center;
+}
+.services a:hover{
+    color: rgb(11, 242, 242);
+    background-color: rgb(36, 36, 36);
+    border: 1px solid rgb(0, 255, 179);
+
+}
+
+.clients_say{
+    text-align: center;
+    width: 320px;
+    height: 600px;
+    margin: 0 20px;
+
+}
+.clients_say h1{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 35px;
+    border-bottom: 2px solid rgb(65, 53, 6);
+    margin: 20px 0 10px 0;
+    color: rgb(8, 97, 92);
+}
+
+.clients_say div{
+    margin: 50px 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.clients_say div img{
+    width: 100px;
+    height: 50px;
+}
+.clients_say div div{
+    text-align: left;
+    display: block;
+    margin: 0 10px;
+}
+
+.clients_say div div p{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 14px;
+    line-height: 20px;
+    color: #064749;
+}
+.clients_say div div h3{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 18px;
+    line-height: 20px;
+    color: #18192e;
+}
+
+.clients_say div a{
+
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(104, 13, 13);
+
+    text-align: center;
+}
+.clients_say div a:hover{
+    color: rgb(19, 3, 6);
+
+
+}
+/* this is footet options */
+.footer{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ddd;
+    padding: 20px 0;
+}
+
+
+
+.footer_sec_1{
+    width: 235px;
+    margin: 10px 20px;
+}
+
+.footer_sec_1 h2{
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(12, 70, 16);
+    color: rgb(9, 16, 38);
+    margin-bottom: 20px;
+}
+
+.footer_sec_1 p span{
+    color: #ba2e1f;
+    font-family: 'Baloo Da 2', cursive; 
+    font-size: 15px;
+    padding-right: 10px;
+}
+.footer_sec_1 p{
+    color: #0a0e22;
+    font-family: 'Baloo Da 2', cursive; 
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+
+.footer_sec_2{
+    width: 235px;
+    margin: 10px 20px;
+}
+.footer_sec_2 h2{
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(157, 20, 20);
+    color: rgb(9, 27, 85);
+    margin-bottom: 20px;
+}
+
+.footer_sec_2 a{
+    padding: 5px 0;
+    display: block;
+    text-decoration: none;
+    font-family: 'Baloo Da 2', cursive;
+    color: #ba2e1f;
+    line-height: 20px;
+}
+.footer_sec_2 a:hover{
+
+    color: #76150b;
+}
+
+.footer_sec_3{
+    width: 235px;
+    margin: 10px 20px;
+}
+
+
+.footer_sec_3 h2{
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(5, 17, 48);
+    color: rgb(7, 90, 86);
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.footer_sec_3 div{
+    margin-top: 10px;
+}
+.footer_sec_3 div h3{
+    font-size: 20px;
+    font-family: 'Baloo Da 2', cursive;
+}
+.footer_sec_3 div h6{
+    font-family: 'Baloo Da 2', cursive;
+    color: #4f2b12;
+    letter-spacing: 2px;
+    line-height: 13px;
+}
+.footer_sec_3 div p{
+    font-family: 'Baloo Da 2', cursive;
+    color: #0d2b2a;
+    line-height: 20px;
+}
+
+.footer_sec_4{
+    width: 235px;
+    margin: 0 20px 10px 20px;
+    text-align: center;
+    padding: 10px 10px;
+}
+.footer_sec_4 h2{
+    text-transform: uppercase;
+    font-family: 'Baloo Da 2', cursive;
+    color: rgb(9, 126, 105);
+    font-size: 26px;
+    border-bottom: 2px solid rgb(14, 61, 104);
+}
+.footer_sec_4 input , .footer_sec_4 textarea{
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 0 5px 10px;
+    resize: none;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid rgb(255, 0, 0);
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 16px;
+    color: rgb(8, 37, 65);
+    font-weight: bolder;
+    background-color:  transparent;
+}
+#Submit{
+    text-align: center;
+    transition: all .5s;
+}
+#Submit:hover{
+    border: 2px solid aqua;
+    background-color: #000000;
+    color: aqua;
+}
+#Submit:active{
+    border: 1.5px solid rgb(41, 114, 114);
+    background-color: #272727;
+    color: rgb(46, 172, 172);
+}
+
+
+
+/* this is copyrigth polocy */
+.copyright{
+    width: 100vw;
+    background-color: #ba2e1f;
+    height: 40px;
+    margin: 0 auto;
+}
+.copyright div{
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright div p{
+    font-family: 'Baloo Da 2', cursive;
+    color: #ddd;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
